@@ -16,6 +16,20 @@ namespace COMP003A.Assignment5
     {
         static void Main(string[] args)
         {
+            PrintSeparator("Triangle");
+            Console.WriteLine("Please input single character into system.");
+            string buildBlock = Console.ReadLine();
+            char conBuildBlock = Convert.ToChar(buildBlock);
+            Console.WriteLine("Plese input positive whole number");
+            string wholeNumber = Console.ReadLine();
+            int limit = Convert.ToInt32(wholeNumber);
+            IsoscelesTriangleBuilder(conBuildBlock, limit);
+            PrintSeparator("Favorite Characters");
+            CharacterInfo("Gumball", 2004);
+            CharacterInfo("Darwin", 2006);
+            CharacterInfo("Wade", 1973);
+            CharacterInfo("Mark", 1989);
+            CharacterInfo("Evan", 1992);
         }
         /// <summary>
         /// Method without parameters, only return value
