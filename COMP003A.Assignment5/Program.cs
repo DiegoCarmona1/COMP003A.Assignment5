@@ -69,7 +69,16 @@ namespace COMP003A.Assignment5
             return 2024 - year;
         }
 
-
-
+        /// <summary>
+        /// Method to give a character name and age.
+        /// </summary>
+        /// <param name="name">String Input</param>
+        /// <param name="birthYear">Integer Input</param>
+        static void CharacterInfo(string name, int birthYear)
+        {
+            int age = AgeCalculator(birthYear);
+            Console.WriteLine(name);
+            Console.WriteLine(age);
+        }
     }
 }
