@@ -61,15 +61,19 @@ namespace COMP003A.Assignment5
         {
             for (int i = 0; i <= size; i++)
             {
-                inputCharacter += inputCharacter;
-                Console.Write(inputCharacter);
+                char rise = inputCharacter += inputCharacter;
+                Console.Write(rise);
+                if (i == size)
+                {
+                    for (int v = size - 1; v >= 1; v--)
+                    {
+                        string convert = Convert.ToString(rise);
+                        string substr1 = convert.Substring(0, v);
+                        Console.WriteLine(substr1);
+                    }
+                }
             }
-            for (int v = size - 1; v >= 1; v--)
-            {
-                string fallingStaircase = Convert.ToString(inputCharacter);
-                string substr1 = fallingStaircase.Substring(0, v);
-                Console.WriteLine(substr1);
-            }
+            
         }
 
         /// <summary>
