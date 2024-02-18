@@ -61,16 +61,17 @@ namespace COMP003A.Assignment5
         {
             for (int i = 0; i <= size; i++)
             {
-                char rise = inputCharacter += inputCharacter;
+                string conVert = Convert.ToString(inputCharacter);
+                string rise = conVert += conVert;
                 Console.Write(rise);
                 if (i == size)
                 {
                     for (int v = size - 1; v >= 1; v--)
                     {
-                        string convert = Convert.ToString(rise);
-                        string substr1 = convert.Substring(0, v);
+                        string substr1 = rise.Substring(0, v);
                         Console.WriteLine(substr1);
-                    }
+                    }    
+                
                 }
             }
             
