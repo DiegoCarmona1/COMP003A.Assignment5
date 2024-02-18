@@ -64,10 +64,10 @@ namespace COMP003A.Assignment5
                 inputCharacter += inputCharacter;
                 Console.Write(inputCharacter);
             }
-            for (int i = size - 1; i >= 1; i--)
+            for (int v = size - 1; v >= 1; v--)
             {
                 string fallingStaircase = Convert.ToString(inputCharacter);
-                string substr1 = fallingStaircase.Substring(0, i);
+                string substr1 = fallingStaircase.Substring(0, v);
                 Console.WriteLine(substr1);
             }
         }
