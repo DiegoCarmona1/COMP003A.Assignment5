@@ -35,5 +35,41 @@ namespace COMP003A.Assignment5
             Console.WriteLine(inputString);
             PrintSeparator();
         }
+
+        /// <summary>
+        /// Two parameters, 2 return values.
+        /// First for loop adds characters to line until it reaaches level of i
+        /// Second for loop lowers the value of i to lower the number of characters shown from the substring coordinates.
+        /// </summary>
+        /// <param name="inputCharacter"> Character Input</param>
+        /// <param name="size">Integer Input</param>
+        static void IsoscelesTriangleBuilder(char inputCharacter, int size)
+        {
+            for (int i = 0; i <= size; i++)
+            {
+                inputCharacter += inputCharacter;
+                Console.Write(inputCharacter);
+            }
+            for (int i = size - 1; i >= 1; i--)
+            {
+                string fallingStaircase = Convert.ToString(inputCharacter);
+                string substr1 = fallingStaircase.Substring(0, i);
+                Console.WriteLine(substr1);
+            }
+        }
+
+        /// <summary>
+        /// Calculates the birth year of inputted person based on age.
+        /// Two parameters and one return
+        /// </summary>
+        /// <param name="year">Integer Input</param>
+        /// <returns>Birth Year based on persons age</returns>
+        static int AgeCalculator(int year)
+        {
+            return 2024 - year;
+        }
+
+
+
     }
 }
