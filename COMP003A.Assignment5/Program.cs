@@ -59,20 +59,17 @@ namespace COMP003A.Assignment5
         /// <param name="size">Integer Input</param>
         static void IsoscelesTriangleBuilder(char inputCharacter, int size)
         {
-            for (int i = 0; i <= size; i++)
+            string conVert = Convert.ToString(inputCharacter);
+
+            for (int i = 0; i < size; i++)
             {
-                string conVert = Convert.ToString(inputCharacter);
-                string rise = conVert += conVert;
-                Console.Write(rise);
-                if (i == size)
-                {
-                    for (int v = size - 1; v >= 1; v--)
-                    {
-                        string substr1 = rise.Substring(0, v);
-                        Console.WriteLine(substr1);
-                    }    
+                Console.WriteLine(conVert);
+                conVert += inputCharacter;
+            }
+            for (int i = size - 1; i > 0; i--)
+            {
+                Console.WriteLine(conVert.Substring(0, i));
                 
-                }
             }
             
         }
